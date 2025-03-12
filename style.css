@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+    background-color: #23272a;
+    color: #fff;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #283035;
+    border: 8px solid #283035;
+    border-radius: 10px ;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 540;
+}
+
+#todo{
+    display: flex;
+    height: 30px;
+    width: 280px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #5865f2;
+    background-color: #23272a00;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#addButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 280px;
+    margin-top: 6px;
+    background-color: #5865f2;
+    border: none;
+    border-radius: 5px;
+    color: #fcfcfc;
+    font-weight: 560;
+    cursor: pointer;
+}
+#addButton:hover {
+    background-color: #4855e1;
+}
+
+#taskList{
+    background-color: #33414a;
+    margin-top: 8px;
+    width: 280px;
+    border-radius: 5px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.task-text {
+    flex-grow: 1;
+    margin: 0 8px;
+    font-size: 1rem;
+    color: #fff;
+    word-wrap: break-word;
+}
+
+.task.completed .task-text {
+    text-decoration: line-through;
+    color: #b3b3b3;
+}
+
+.button-container {
+    display: flex;
+    gap: 5px;
+    position: relative;
+}
+
+.editbtn, .deletebtn {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.editbtn {
+    background: #fee75c;
+    color: #33414a;
+    font-weight: 550;
+}
+
+.deletebtn{
+    background: #ed4245;
+    font-weight: 550;
+}
+
+.editbtn:hover {
+    background: #edd652;
+}
+
+.deletebtn:hover {
+    background: #d9393c;
+}
